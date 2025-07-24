@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishwaraj Singh - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="header">
+                <div class="name">Vishwaraj Singh</div>
+                <div class="title">Software Engineer</div>
+            </div>
+            
+            <div class="profile-section">
+                <div class="card-container">
+                    <div class="id-card" id="idCard">
+                        <!-- Front of the card -->
+                        <div class="card-face card-front">
+                            <div class="card-hologram"></div>
+                            <div class="card-header">
+                                <div class="card-avatar">VS</div>
+                                <div class="card-info">
+                                    <div class="card-name">Vishwaraj Singh</div>
+                                    <div class="card-title">Software Engineer</div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-field">
+                                    <span class="card-label">ID</span>
+                                    <span class="card-value">DEV</span>
+                                </div>
+                                <div class="card-field">
+                                    <span class="card-label">Level</span>
+                                    <span class="card-value">Senior </span>
+                                </div>
+                                <div class="card-field">
+                                    <span class="card-label">Clearance</span>
+                                    <span class="card-value">Full Stack</span>
+                                </div>
+                                <div class="card-field">
+                                    <span class="card-label">Location</span>
+                                    <span class="card-value">Pune, India</span>
+                                </div>
+                                <div class="card-tech-grid">
+                                    <div class="tech-badge">Python</div>
+                                    <div class="tech-badge">Node.js</div>
+                                    <div class="tech-badge">AI/ML</div>
+                                    <div class="tech-badge">AWS</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Back of the card -->
+                        <div class="card-face card-back">
+                            <div class="card-back-content">
+                                <div class="qr-code">
+                                    <div style="font-size: 6px; line-height: 1;">
+                                        ████ ████<br>
+                                        █  █ █  █<br>
+                                        █  █ █  █<br>
+                                        ████ ████
+                                    </div>
+                                </div>
+                                <div class="card-back-text">
+                                    <strong>Digital Identity Card</strong><br>
+                                    Valid until: 2030-12-08<br><br>
+                                    "Code is poetry in motion"<br>
+                                    - Vishwaraj Singh
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="interactive-card">
+               
+            </div>
+        </div>
+        
+        <div class="right-panel">
+            <div class="terminal-nav">
+                <div class="nav-commands">
+                    <span class="nav-command" onclick="showSection('help')">help</span>
+                    <span class="nav-command" onclick="showSection('about')">about</span>
+                    <span class="nav-command" onclick="showSection('projects')">projects</span>
+                    <span class="nav-command" onclick="showSection('skills')">skills</span>
+                    <span class="nav-command" onclick="showSection('experience')">experience</span>
+                    <span class="nav-command" onclick="showSection('contact')">contact</span>
+                    <span class="nav-command" onclick="showSection('education')">education</span>
+                    <span class="nav-command" onclick="showSection('certifications')">certifications</span>
+                </div>
+                <div class="nav-commands" style="margin-top: 5px;">
+                    <span class="nav-command" onclick="runCommand('sudo')">sudo</span>
+                    <span class="nav-command" onclick="runCommand('clear')">clear</span>
+                </div>
+            </div>
+            
+            <div class="terminal-content" id="terminalContent">
+                <div class="terminal-line">
+                    <span class="prompt">Vishwaraj@portfolio:~$</span>
+                    <span class="command"> Welcome</span>
+                </div>
+                
+                <div class="welcome-message">
+                    <div class="output">Hi, I'm Vishwaraj Singh, a Software Engineer & AI Enthusiast.</div>
+                    <div class="output" style="margin-top: 10px;">
+                        Welcome to my portfolio terminal! haha!<br>
+                        Type 'help' to see available commands.
+                    </div>
+                </div>
+                
+                <div class="terminal-input">
+                    <span class="input-prompt">Vishwaraj@portfolio:~$</span>
+                    <input type="text" class="command-input" id="commandInput" autofocus>
+                    <div class="cursor"></div>
+                </div>
+                
+                <div id="sectionContent">
+                    <!-- Dynamic content will be loaded here -->
+                </div>
+            </div>
+            
+            <div class="status-bar">
+                <span>Vishwaraj@portfolio:~$</span>
+                <span>7/1/2025, 5:58:03 AM</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
