@@ -5,12 +5,15 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const validator = require('validator');
 
+
+
 const app = express();
 const PORT = process.env.PORT || 3000;
+app.use(express.static('public'));
 
 app.use(bodyParser.json());
 app.use(cors({
-  origin: 'https://yourportfolio.com', // restrict to your domain
+  origin: 'https://yourportfolio.com'|| 'file:///Users/macbook/Desktop/portfolio/index.html' // restrict to your domain
 }));
 
 const transporter = nodemailer.createTransport({
