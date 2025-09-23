@@ -29,16 +29,16 @@ const sections = {
     </div>
     <div class="output">
         <div style="margin-bottom: 15px;">
-            <span style="color: #00ff88;">Name:</span> Vishwaraj Singh<br>
+            <span style="color: #00ff88;">Name:</span> Vishwaraj Singh Chundawat<br>
             <span style="color: #00ff88;">Role:</span> Software Engineer & AI Enthusiast<br>
             <span style="color: #00ff88;">Location:</span> Pune, India<br>
-            <span style="color: #00ff88;">Experience:</span> 2 month internship
+            <span style="color: #00ff88;">Experience:</span> 4+ month internship
         </div>
         <div>
-            I'm a passionate software engineer with expertise in full-stack development,
-            artificial intelligence, and modern web technologies. I love building 
-            innovative solutions that solve real-world problems and am always 
-            exploring the latest in AI and machine learning.
+            Backend developer specializing in secure, high-performance systems and APIs, with
+            expertise in database optimization and containerization. Enthusiastic about applying 
+            AI to infrastructure and backend engineering to drive smarter, more resilient 
+            enterprise-scale solutions.
         </div>
     </div>
 </div>`,
