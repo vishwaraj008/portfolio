@@ -64,11 +64,15 @@ const sections = {
         </div>
         <div class="skill-category">
             <div class="skill-title">AI/ML:</div>
-            <div class="skill-list">TensorFlow, PyTorch, Sckit Learn, Pandas, Numpy, OpenAI API, Langchain, Hugging Face</div>
+            <div class="skill-list">TensorFlow, PyTorch, Sckit Learn, Pandas, Numpy, OpenAI API, Langchain, Qdrant, Hugging Face</div>
         </div>
         <div class="skill-category">
             <div class="skill-title">Databases:</div>
             <div class="skill-list">PostgreSQL, MongoDB, Redis, MySQL</div>
+        </div>
+        <div class="skill-category">
+            <div class="skill-title">Tools:</div>
+            <div class="skill-list">Git & GitHub, Postman, Vercel, phpMyAdmin, Sentry</div>
         </div>
         <div class="skill-category">
             <div class="skill-title">Cloud & DevOps:</div>
