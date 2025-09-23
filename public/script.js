@@ -60,11 +60,11 @@ const sections = {
         </div>
         <div class="skill-category">
             <div class="skill-title">Backend Technologies:</div>
-            <div class="skill-list">Node.js, Express</div>
+            <div class="skill-list">Node.js, Express.js</div>
         </div>
         <div class="skill-category">
             <div class="skill-title">AI/ML:</div>
-            <div class="skill-list">TensorFlow, PyTorch, OpenAI API, Langchain, Hugging Face</div>
+            <div class="skill-list">TensorFlow, PyTorch, Sckit Learn, Pandas, Numpy, OpenAI API, Langchain, Hugging Face</div>
         </div>
         <div class="skill-category">
             <div class="skill-title">Databases:</div>
@@ -72,7 +72,7 @@ const sections = {
         </div>
         <div class="skill-category">
             <div class="skill-title">Cloud & DevOps:</div>
-            <div class="skill-list">AWS, Google Cloud</div>
+            <div class="skill-list">AWS, Google Cloud, Docker</div>
         </div>
     </div>
 </div>`,
@@ -85,41 +85,117 @@ const sections = {
     </div>
     <div class="output">
         <div class="project-item">
-            <div class="project-title">🤖 AI-Powered Chat Assistant</div>
-            <div class="project-tech">Python • OpenAI • FastAPI • React • PostgreSQL</div>
+            <div class="project-title">TradeBehavior</div>
+            <div class="project-tech">Python • Sckit-Learn • Numpy • Pandas</div>
             <div class="project-desc">
-                Intelligent conversational AI with context awareness, 
-                memory management, and custom knowledge base integration.
+                A trade behavior analyzer using clustering, regression, and statistical models on large-scale trading data.
+                Designed pipelines in Python with Pandas/NumPy to process 200k+ trades, applying K-Means, linear regression, and correlation analysis to uncover sentiment-driven patterns.
+                Achieved 70% faster insight generation with automated visualizations, improving anomaly detection and trading strategy evaluation.
             </div>
             <div class="project-links">
-                <a href="#" target="_blank">GitHub</a>
-                <a href="#" target="_blank">Live Demo</a>
+                <a href="https://github.com/vishwaraj008/Trader-Behavior-Insights.git" target="_blank">GitHub</a>
             </div>
         </div>
         
         <div class="project-item">
-            <div class="project-title">📊 Real-time Analytics Dashboard</div>
-            <div class="project-tech">React • Node.js • Socket.io • MongoDB • D3.js</div>
+            <div class="project-title">SkyEyeManager</div>
+            <div class="project-tech">React • Express.js • Socket.io • MySql • TypeScript</div>
             <div class="project-desc">
-                Interactive dashboard with real-time data visualization,
-                custom metrics tracking, and automated reporting.
+                A Drone Survey Management System for real-time mission planning, telemetry tracking, and fleet monitoring.
+                Designed and implemented geospatial features such as flight path visualization, polygon-based survey areas, and live telemetry
+                updates to support efficient drone operations.
+                Improved monitoring efficiency by 40% and reduced mission planning time by 30%, enabling more reliable decision-making and seamless
+                coordination across multiple drones.
             </div>
             <div class="project-links">
-                <a href="#" target="_blank">GitHub</a>
-                <a href="#" target="_blank">Live Demo</a>
+                <a href="https://github.com/vishwaraj008/Drone-management-system.git" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+         <div class="project-item">
+            <div class="project-title">Solthar/mcp</div>
+            <div class="project-tech">Express.js • MCP • MySql • LLM</div>
+            <div class="project-desc">
+                Designed and deployed a scalable MCP server to unify multiple proprietary tools under a single, secure API endpoint. Implemented a
+                modular, high-availability architecture with fault tolerance and strong security, providing centralized, reliable access to critical services for
+                seamless operations.
+                This design reduced integration time by 60% and enabled rapid deployment of new tools in under 30 minutes, enhancing incident
+                readiness, operational efficiency, and adaptability in fast-paced network and infrastructure environments.
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/vishwaraj008/Solthar-mcp.git" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-title">WhatsappMicroServic</div>
+            <div class="project-tech">Express.js</div>
+            <div class="project-desc">
+                Built a Node.js microservice that uploads media files (images, videos, documents) to the WhatsApp Business Cloud API and returns a unique
+                container ID for messaging use. Integrated robust validation, retry logic with exponential backoff, and automatic file cleanup for reliable,
+                production-ready performance.
+                Improved media handling efficiency by 50% and enabled seamless integration across multiple client systems for secure, scalable
+                WhatsApp communication.
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/vishwaraj008/whatsAppMicroService.git" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-title">Git-Backup (VS Code Extension)</div>
+            <div class="project-tech">Express.js • TyperScript • VS Code • Asuze</div>
+            <div class="project-desc">
+                Custom-built Visual Studio Code extension that lets developers instantly back up any local project or directory with one click. Designed to
+                improve code safety and version assurance by automating backups directly within the IDE.
+                Achieved a 70% reduction in manual backup efforts and improved recovery reliability across local development workflows.
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/vishwaraj008/git-backup.git" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-title">TuneMatch</div>
+            <div class="project-tech">Python • Sckit-Learn • Numpy • Pandas</div>
+            <div class="project-desc">
+                A personalized music suggester using user preferences, song similarity, and ML models.
+                Designed and implemented a recommendation engine using algorithms like KNN and content-based filtering to suggest songs based on user
+                behavior.
+                Achieved 85% user satisfaction accuracy during testing, improving the relevance of recommendations and user engagement.
+            </div>
+            <div class="project-links">
+                <a href="https://gist.github.com/e80537569057ccbd60b4c7827fa76bb8.git" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-title">Moad(Mother Of All Documantation)</div>
+            <div class="project-tech">Express.js • LLM</div>
+            <div class="project-desc">
+                Built a Node.js tool that generates clean, structured markdown documentation for JavaScript projects by parsing source code and preserving
+                the original folder hierarchy. Enhanced with natural language logic summaries, making it ideal for onboarding, handovers, and codebase
+                maintainability.
+                Reduced documentation time by over 60%, improving onboarding speed and code comprehension across teams.
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/vishwaraj008/MoadV2.git" target="_blank">GitHub</a>
             </div>
         </div>
         
         <div class="project-item">
-            <div class="project-title">🚀 E-Commerce Platform</div>
-            <div class="project-tech">Next.js • TypeScript • Stripe • Prisma • AWS</div>
+            <div class="project-title">Athena/RAG</div>
+            <div class="project-tech">Express.js • LangChain • LLM • Embeddings • Vector DB</div>
             <div class="project-desc">
-                Full-stack e-commerce solution with payment processing,
-                inventory management, and advanced analytics.
+                Developed a LangChain-powered platform capable of real-time, context-aware responses by integrating embeddings with vector search.
+                Designed a secure retrieval pipeline that supports rapid data access and ensures integrity, aligning with SOC requirements for quick,
+                Jul 2025 - Aug 2025
+                accurate information analysis.
+                The system reduced query response time by 40% and improved accuracy by 35%, enabling faster incident investigation, enhanced
+                decision-making, and reliable information delivery for security and network operations.
             </div>
             <div class="project-links">
-                <a href="#" target="_blank">GitHub</a>
-                <a href="#" target="_blank">Live Demo</a>
+                <a href="https://github.com/vishwaraj008/Athena.git" target="_blank">GitHub</a>
             </div>
         </div>
     </div>
@@ -190,10 +266,10 @@ const sections = {
     <div class="output">
         <div class="education-item">
             <div class="education-degree">🎓 Bachelor of Technology (B.Tech)</div>
-            <div class="education-school">Computer Science & Engineering</div>
+            <div class="education-school">Computer Science & Business System</div>
             <div class="education-details">
-                <span class="education-year">2021 - 2025</span>
-                <span class="education-grade">CGPA: 8.2/10</span>
+                <span class="education-year">2022 - 2026</span>
+                <span class="education-grade">CGPA: 8.4/10</span>
             </div>
             <div class="education-location">Pune, India</div>
         </div>
@@ -202,20 +278,20 @@ const sections = {
             <div class="education-degree">📚 12th Grade (Higher Secondary)</div>
             <div class="education-school">Science Stream (PCM + Computer Science)</div>
             <div class="education-details">
-                <span class="education-year">2019 - 2021</span>
-                <span class="education-grade">Percentage: 85.2%</span>
+                <span class="education-year">2021 - 2022</span>
+                <span class="education-grade">Percentage: 81.2%</span>
             </div>
-            <div class="education-location">Rajasthan, India</div>
+            <div class="education-location">Udaipur, Rajasthan, India</div>
         </div>
         
         <div class="education-item">
             <div class="education-degree">📖 10th Grade (Secondary)</div>
             <div class="education-school">CBSE Board</div>
             <div class="education-details">
-                <span class="education-year">2017 - 2019</span>
-                <span class="education-grade">Percentage: 87.4%</span>
+                <span class="education-year">2019 - 2020</span>
+                <span class="education-grade">Percentage: 85.6%</span>
             </div>
-            <div class="education-location">Rajasthan, India</div>
+            <div class="education-location">Udaipur, Rajasthan, India</div>
         </div>
     </div>
 </div>`,
@@ -228,42 +304,43 @@ const sections = {
     </div>
     <div class="output">
         <div class="experience-item">
-            <div class="experience-title">💼 Software Development Intern</div>
-            <div class="experience-company">Tech Solutions Pvt Ltd</div>
-            <div class="experience-duration">June 2024 - August 2024 (2 months)</div>
-            <div class="experience-location">Pune, India</div>
+            <div class="experience-title">Software Development Intern</div>
+            <div class="experience-company">nDimension Studio</div>
+            <div class="experience-duration">June 2025 - August 2025 (2 months)</div>
+            <div class="experience-location">Udaipur, India</div>
             <div class="experience-description">
-                • Developed and maintained web applications using React.js and Node.js<br>
-                • Collaborated with senior developers on full-stack projects<br>
-                • Implemented RESTful APIs and integrated third-party services<br>
-                • Participated in code reviews and agile development practices<br>
-                • Gained hands-on experience with modern development tools and workflows
+                   • Developed and maintained RESTful APIs for backend systems, improving application performance by 30%.
+                   • Designed optimized database schemas and queries, reducing response times by 25%.
+                   • Enhanced internal tools for better system monitoring and workflow efficiency (20% improvement).
+                   • Implemented automated testing, achieving 90% coverage and reducing regressions by 50%.
             </div>
         </div>
         
         <div class="experience-item">
-            <div class="experience-title">🚀 Freelance Developer</div>
-            <div class="experience-company">Self-Employed</div>
-            <div class="experience-duration">January 2024 - Present</div>
+            <div class="experience-title">Backend Intern </div>
+            <div class="experience-company">FBSPL</div>
+            <div class="experience-duration">June 2025 - August 2025 (2 months)</div>
             <div class="experience-location">Remote</div>
             <div class="experience-description">
-                • Built custom websites and web applications for small businesses<br>
-                • Developed AI-powered chatbots and automation tools<br>
-                • Created responsive designs with modern UI/UX principles<br>
-                • Managed client relationships and project deliverables
+                   • Integrated secure third-party APIs, expanding service capabilities by 15%.
+                   • Resolved backend performance issues, achieving under-24-hour average resolution time.
+                   • Introduced distributed logging, improving error detection and reducing downtime by 25%.
+                   • Executed migration from monolithic to containerised architecture, lowering infrastructure costs by 40%.
             </div>
         </div>
         
         <div class="experience-item">
-            <div class="experience-title">📚 Open Source Contributor</div>
-            <div class="experience-company">Various Projects</div>
-            <div class="experience-duration">2023 - Present</div>
-            <div class="experience-location">Remote</div>
+            <div class="experience-title">AI Intern</div>
+            <div class="experience-company">Arealis</div>
+            <div class="experience-duration">2025 September - Present</div>
+            <div class="experience-location">Hybrid</div>
             <div class="experience-description">
-                • Contributed to open-source Python and JavaScript projects<br>
-                • Fixed bugs and implemented new features<br>
-                • Improved documentation and code quality<br>
-                • Engaged with developer communities on GitHub
+                   • Applied SALMA architecture to develop scalable, agentic AI-driven systems and intelligent workflows.
+                   • Built and optimised AI workflows and agents by working on data preprocessing, model integration, and pipeline optimisation.
+                   • Designed retrieval and prediction workflows to enhance reasoning, adaptability, and performance.
+                   • Contributed to multilingual AI capabilities, focusing on clarity, scalability, and user-centric outcomes.
+                   • Improved pipeline efficiency by 25% through optimization of preprocessing and integration workflows.
+                   • Increased retrieval accuracy by 18%, enhancing reasoning quality in AI agents.
             </div>
         </div>
     </div>
@@ -277,45 +354,24 @@ const sections = {
     </div>
     <div class="output">
         <div class="cert-item">
-            <div class="cert-title">🏆 AWS Certified Cloud Practitioner</div>
+            <div class="cert-title">AWS Certified Cloud Practitioner</div>
             <div class="cert-issuer">Amazon Web Services</div>
             <div class="cert-date">Issued: March 2024</div>
             <div class="cert-id">Credential ID: AWS-CCP-2024-VS</div>
         </div>
         
         <div class="cert-item">
-            <div class="cert-title">🤖 Machine Learning Specialization</div>
-            <div class="cert-issuer">Coursera - Stanford University</div>
-            <div class="cert-date">Completed: January 2024</div>
-            <div class="cert-id">Certificate ID: ML-SPEC-2024-001</div>
+            <div class="cert-title">IIT Kharagpur Certified Cloud Computing</div>
+            <div class="cert-issuer">IIT Kharagpur </div>
+            <div class="cert-date">Completed: April 2025</div>
+            <div class="cert-id">Certificate ID: NPTEL25CS11S1055204328</div>
         </div>
         
         <div class="cert-item">
-            <div class="cert-title">🌐 Full Stack Web Development</div>
-            <div class="cert-issuer">freeCodeCamp</div>
-            <div class="cert-date">Completed: November 2023</div>
-            <div class="cert-id">Certificate ID: FCC-FSWD-2023</div>
-        </div>
-        
-        <div class="cert-item">
-            <div class="cert-title">🐍 Python for Data Science</div>
-            <div class="cert-issuer">IBM - Coursera</div>
-            <div class="cert-date">Completed: September 2023</div>
-            <div class="cert-id">Certificate ID: IBM-PY4DS-2023</div>
-        </div>
-        
-        <div class="cert-item">
-            <div class="cert-title">⚛️ React.js Developer Certification</div>
-            <div class="cert-issuer">Meta - Coursera</div>
-            <div class="cert-date">Completed: August 2023</div>
-            <div class="cert-id">Certificate ID: META-REACT-2023</div>
-        </div>
-        
-        <div class="cert-item">
-            <div class="cert-title">🔒 Cybersecurity Fundamentals</div>
-            <div class="cert-issuer">Cisco Networking Academy</div>
-            <div class="cert-date">Completed: June 2023</div>
-            <div class="cert-id">Certificate ID: CISCO-CYBSEC-2023</div>
+            <div class="cert-title">IIT Kharagpur Certified Database Management System</div>
+            <div class="cert-issuer">IIT Kharagpur</div>
+            <div class="cert-date">Completed: April 2024</div>
+            <div class="cert-id">Certificate ID: NPTEL24CS21S650701897</div>
         </div>
     </div>
 </div>`
