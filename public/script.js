@@ -17,7 +17,6 @@ const sections = {
         • education - My educational background<br>
         • certifications - Professional certifications<br>
         • clear - Clear terminal<br>
-        • sudo - Run as administrator
     </div>
 </div>`,
     
