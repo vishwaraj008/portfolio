@@ -4,17 +4,23 @@ const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const validator = require('validator');
-
-
+const path = require('path'); // Added path module
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-app.use(express.static('public'));
+
+// 1. Better CORS (Allow all for now to test, or add your Vercel URL)
+app.use(cors());
 
 app.use(bodyParser.json());
-// app.use(cors({
-//   origin: 'https://yourportfolio.com'|| 'file:///Users/macbook/Desktop/portfolio/index.html' // restrict to your domain
-// }));
+
+// 2. Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
+
+// 3. IMPORTANT: Explicitly serve index.html for the root route
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -35,12 +41,7 @@ app.post('/send-inquiry', (req, res) => {
     from: validator.normalizeEmail(email),
     to: process.env.EMAIL_USER,
     subject: `Inquiry from ${validator.escape(fullName)}`,
-    text: `Name: ${validator.escape(fullName)}
-Mobile: ${mobile}
-Email: ${validator.normalizeEmail(email)}
-
-Message:
-${validator.escape(message)}`
+    text: `Name: ${validator.escape(fullName)}\nMobile: ${mobile}\nEmail: ${validator.normalizeEmail(email)}\n\nMessage:\n${validator.escape(message)}`
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
@@ -53,8 +54,11 @@ ${validator.escape(message)}`
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+// For local testing
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+}
 
 module.exports = app;
