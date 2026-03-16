@@ -19,7 +19,7 @@ const sections = {
         • clear - Clear terminal<br>
     </div>
 </div>`,
-    
+
     about: `
 <div class="section-content active">
     <div class="terminal-line">
@@ -41,7 +41,7 @@ const sections = {
         </div>
     </div>
 </div>`,
-    
+
     skills: `
 <div class="section-content active">
     <div class="terminal-line">
@@ -79,7 +79,7 @@ const sections = {
         </div>
     </div>
 </div>`,
-    
+
     projects: `
 <div class="section-content active">
     <div class="terminal-line">
@@ -203,7 +203,7 @@ const sections = {
         </div>
     </div>
 </div>`,
-    
+
     contact: `
 <div class="section-content active">
     <div class="terminal-line">
@@ -386,26 +386,26 @@ function handleContactForm() {
     if (form) {
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            
+
             const formData = {
                 fullName: document.getElementById('fullName').value,
                 mobile: document.getElementById('mobile').value,
                 email: document.getElementById('email').value,
                 message: document.getElementById('message').value
             };
-            
+
             const messageDiv = document.getElementById('formMessage');
             messageDiv.innerHTML = '<div style="color: #00ff88;">Sending inquiry...</div>';
-            
+
             try {
-                const response = await fetch('http://localhost:3000/send-inquiry', {
+                const response = await fetch('/send-inquiry', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify(formData)
                 });
-                
+
                 if (response.ok) {
                     messageDiv.innerHTML = '<div style="color: #00ff88;">✅ Inquiry sent successfully! I will get back to you soon.</div>';
                     form.reset();
@@ -424,7 +424,7 @@ function handleContactForm() {
 function showSection(sectionName) {
     const content = document.getElementById('sectionContent');
     content.innerHTML = sections[sectionName] || sections['help'];
-    
+
     // Add command line
     const commandLine = document.createElement('div');
     commandLine.innerHTML = `
@@ -435,14 +435,14 @@ function showSection(sectionName) {
         </div>
     `;
     content.appendChild(commandLine);
-    
+
     // Focus the new input
     const newInput = commandLine.querySelector('.command-input');
     newInput.focus();
-    
+
     // Add event listener
     newInput.addEventListener('keypress', handleCommand);
-    
+
     // If contact section, set up form handler
     if (sectionName === 'contact') {
         setTimeout(handleContactForm, 100);
@@ -472,7 +472,7 @@ function runCommand(cmd) {
 function handleCommand(e) {
     if (e.key === 'Enter') {
         const command = e.target.value.toLowerCase().trim();
-        
+
         if (sections[command]) {
             showSection(command);
         } else if (command === 'clear') {
@@ -492,7 +492,7 @@ function handleCommand(e) {
                 </div>
             `;
         }
-        
+
         e.target.value = '';
     }
 }
@@ -510,7 +510,7 @@ let isFlipped = false;
 function init3DCard() {
     const card = document.getElementById('idCard');
     const container = document.querySelector('.card-container');
-    
+
     if (!card || !container) return;
 
     // Mouse move handler for 3D rotation
@@ -518,10 +518,10 @@ function init3DCard() {
         const rect = container.getBoundingClientRect();
         const centerX = rect.left + rect.width / 2;
         const centerY = rect.top + rect.height / 2;
-        
+
         const rotateX = (e.clientY - centerY) / 10;
         const rotateY = (centerX - e.clientX) / 10;
-        
+
         if (!isFlipped) {
             card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
         } else {
@@ -551,7 +551,7 @@ function init3DCard() {
     // Add subtle floating animation
     let floatDirection = 1;
     let floatPosition = 0;
-    
+
     setInterval(() => {
         floatPosition += 0.5 * floatDirection;
         if (floatPosition > 3 || floatPosition < -3) {
@@ -562,14 +562,14 @@ function init3DCard() {
 }
 
 // Initialize everything when DOM is ready
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Initialize command input handler
     document.getElementById('commandInput').addEventListener('keypress', handleCommand);
-    
+
     // Start time updates
     setInterval(updateTime, 1000);
     updateTime();
-    
+
     // Initialize 3D card
     setTimeout(init3DCard, 100);
 });
